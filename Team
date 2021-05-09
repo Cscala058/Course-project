@@ -1,0 +1,28 @@
+public class Team {
+
+    private String teamName;
+    private int teamWins;
+    private int teamLosses;
+
+    public String getTeamName() {
+        return teamName;
+    }
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
+    }
+    public int getTeamWins() {
+        return teamWins;
+    }
+    public void setTeamWins(int teamWins) {
+        this.teamWins = teamWins;
+    }
+    public int getTeamLosses() {
+        return teamLosses;
+    }
+    public void setTeamLosses(int teamLosses) {
+        this.teamLosses = teamLosses;
+    }
+    public double getWinPercentage() {
+        return teamWins / (double) (teamWins + teamLosses);
+    }
+}
